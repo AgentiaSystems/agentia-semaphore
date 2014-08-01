@@ -1,0 +1,43 @@
+{
+  "name": "semaphorejs",
+  "version": "0.1.0",
+  "description": "Node.js wrapper for the Semaphore.co SMS gateway API",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://JohnnyEstilles@github.com/JohnnyEstilles/semaphorejs.git"
+  },
+  "keywords": [
+    "semaphore",
+    "sms",
+    "philippines",
+    "api"
+  ],
+  "author": "Johnny Estilles <johnny.estilles@agentia.asia>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnnyEstilles/semaphorejs/issues"
+  },
+  "homepage": "https://github.com/JohnnyEstilles/semaphorejs",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.6",
+    "gulp-coverage": "^0.1.24",
+    "gulp-jshint": "^1.8.0",
+    "gulp-mocha": "^0.5.2",
+    "jshint": "^2.5.2",
+    "mocha": "^1.20.1",
+    "must": "^0.12.0"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.2.0",
+    "request": "^2.39.0",
+    "underscore": "^1.6.0"
+  }
+}
