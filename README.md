@@ -5,7 +5,7 @@ SemaphoreJS is a Node.js module, which provides an object oriented wrapper for t
 
 ### Installation
 
-![NPM version](https://badge.fury.io/js/semaphorejs.png) [![Build Status](https://travis-ci.org/JohnnyEstilles/semaphorejs.svg?branch=feature%2Finitial-functionality)](https://travis-ci.org/JohnnyEstilles/semaphorejs)
+![NPM version](https://badge.fury.io/js/semaphorejs.png)    [![Build Status](https://travis-ci.org/JohnnyEstilles/semaphorejs.svg?branch=master)](https://travis-ci.org/JohnnyEstilles/semaphorejs)
 
 Install with the Node.js package manager [npm](http://npmjs.org/):
 
