@@ -32,7 +32,9 @@
     "gulp-jshint": "^1.9.2",
     "gulp-mocha": "^2.0.0",
     "jshint": "^2.6.3",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0"
   },
   "dependencies": {
     "moment-timezone": "^0.3.0",

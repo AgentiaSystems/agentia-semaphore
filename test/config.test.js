@@ -1,5 +1,5 @@
 var expect = require('chai').expect,
-	Semaphore = require('../../lib/semaphore');
+	Semaphore = require('../lib/semaphore');
 
 describe('configuration options', function() {
 
