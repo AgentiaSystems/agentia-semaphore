@@ -28,6 +28,7 @@ node_modules
 .coverage
 .coverrun
 .coverdata
+coverage
 coverage.html
 
 # Local examples with my Semaphore key
