@@ -1,0 +1,29 @@
+{
+	"excludeFiles": [
+		"node_modules",
+		"public"
+	],
+	"preset": "yandex",
+	"disallowMultipleVarDecl": null,
+	"disallowMultipleLineBreaks": true,
+	"disallowTrailingWhitespace": true,
+	"requireSpacesInAnonymousFunctionExpression": null,
+	"disallowSpacesInsideObjectBrackets": null,
+	"requireCurlyBraces": true,
+	"disallowYodaConditions": null,
+	"requireLineFeedAtFileEnd": true,
+	"maximumLineLength": null,
+	"disallowSpacesInsideParentheses": null,
+	"requireSpaceAfterKeywords": null,
+	"requireSpaceAfterLineComment": null,
+	"disallowKeywordsOnNewLine": null,
+	"disallowQuotedKeysInObjects": null,
+	"requireSpaceBeforeBinaryOperators": true,
+	"requireSpaceAfterBinaryOperators": true,
+	"disallowMixedSpacesAndTabs": true,
+	"validateQuoteMarks": true,
+	"requireSpaceBetweenArguments": true,
+	"disallowSpaceAfterObjectKeys": true,
+	"requireSpacesInConditionalExpression": true,
+	"disallowImplicitTypeConversion": null
+}

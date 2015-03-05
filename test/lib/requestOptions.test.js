@@ -107,6 +107,14 @@ describe('requestOptions()', function() {
 				expect(options.body).to.equal('number=09995551212&message=This%20is%20a%20test&from=nobody');
 			});
 
+			it('should return a valid url when number/message are valid, and from setting', function() {
+				semaphore.set('from', 'nobody')
+				options = semaphore.requestOptions('sms', { number: '09995551212', message: 'This is a test' } );
+				expect(options.method).to.equal('POST');
+				expect(options.url).to.equal('http://api.semaphore.co/api/sms?api=1234567890abcdefghij');
+				expect(options.body).to.equal('number=09995551212&message=This%20is%20a%20test&from=nobody');
+			});
+
 		});
 
 		describe('messages', function() {
