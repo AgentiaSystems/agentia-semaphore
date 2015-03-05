@@ -1,6 +1,6 @@
 {
   "name": "semaphorejs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Node.js wrapper for the Semaphore.co SMS gateway API",
   "main": "index.js",
   "directories": {
