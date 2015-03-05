@@ -27,11 +27,13 @@
   "homepage": "https://github.com/JohnnyEstilles/semaphorejs",
   "devDependencies": {
     "chai": "^2.1.0",
+    "coveralls": "^2.11.2",
     "gulp": "^3.8.11",
     "gulp-coverage": "^0.3.34",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.2",
     "gulp-mocha": "^2.0.0",
+    "istanbul": "^0.3.7",
     "jscs": "^1.11.3",
     "jshint": "^2.6.3",
     "mocha": "^2.1.0",
