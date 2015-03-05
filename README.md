@@ -1,21 +1,23 @@
-# SemaphoreJS
-SemaphoreJS is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co](http://www.semaphore.co/) SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the 
+# Agentia-Semaphore
+Agentia-Semaphore is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co](http://www.semaphore.co/) SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the 
 
 ## Usage
 
 ### Installation
 
-![NPM version](https://badge.fury.io/js/semaphorejs.png)    [![Build Status](https://travis-ci.org/JohnnyEstilles/semaphorejs.svg?branch=master)](https://travis-ci.org/JohnnyEstilles/semaphorejs)
+![NPM version](https://badge.fury.io/js/agentia-semaphore.png)  [![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
+
+[![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
 
 Install with the Node.js package manager [npm](http://npmjs.org/):
 
-    $ npm install --save semaphorejs
+    $ npm install --save agentia-semaphore
 
 ### Configuration Options
 
-The SemaphoreJS API provides the following configuration options.
+The Agentia-Semaphore API provides the following configuration options.
 
-`api key` (*Required*) - Configures your Semaphore API Key. Use of SemaphoreJS requires a [Semaphore](http://www.semaphore.co/) API key. Using the SemaphoreJS without setting `api key` will result in an exception.
+`api key` (*Required*) - Configures your Semaphore API Key. Use of Agentia-Semaphore requires a [Semaphore](http://www.semaphore.co/) API key. Using the Agentia-Semaphore without setting `api key` will result in an exception.
 
 `from` (*Optional*, *Default*: 'SEMAPHORE') - Sets the default name/number the message should originate from. You can also set the `from` option for each individual message. 
 
@@ -26,7 +28,7 @@ The SemaphoreJS API provides the following configuration options.
 Using `semaphore.set(option, value)`, where `option` is a string corresponding to the option being set, and `value` is the desired setting for the option.
 
 
-    var semaphore = require('semaphorejs');    
+    var semaphore = require('agentia-semaphore');    
     semaphore.set('api key', 'your_semaphore_api_key');
 
 ##### Setting the API key using the Environment Variable
@@ -42,7 +44,7 @@ You can also configure your Semaphore API using the `SEMAPHORE_API_KEY` environm
 >
 > OpenShift: [How Create and Use Environment Variables](https://www.openshift.com/kb/kb-e1072-how-to-create-and-use-environment-variables-on-the-server)
 
-### The SemaphoreJS API
+### The Agentia-Semaphore API
 Our API mirrors all the functions available in the [Semaphore.co](http://www.semaphore.co/documentation) API.
 
 #### Sending Messages
@@ -226,7 +228,7 @@ We use The Mocha framework along with the Chai assertion library for your unit t
 
 You can run our unit tests by cloning our repositository, install the module dependencies using `npm install`, then running `npm test`.
 
-    git clone https://github.com/JohnnyEstilles/semaphorejs.git
+    git clone https://github.com/AgentiaSystems/agentia-semaphore.git
     npm install
     npm test
 
