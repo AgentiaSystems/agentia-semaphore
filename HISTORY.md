@@ -1,7 +1,23 @@
-# SemaphoreJS
+# Agentia-Semaphore
 
-## v0.1.2 / 2015-03-04
+## v0.1.2 / 2015-03-05
 
+* added; coverage status badge to README.md
+* added; code climate badge to README.md
+* added; test for lib/account.js
+* added; test for lib/api.js
+* added; test for lib/messages.js
+* added; test for lib/network.js
+* added; test for lib/period.js
+* added; test for lib/sms.js
+* achieved 100% coverage
+* updated; refactored lib/requestOptions
+* added; development dependency "sinon" version 1.12.2
+* added; development dependency "sinon-chai" version 2.7.0
+* added; development dependency "coveralls": version 2.11.2
+* added; development dependency "istanbul" version 0.3.7
+* added; development dependency "jscs" version 1.11.3
+* added; development dependency "gulp-jscs" version 1.4.0
 * updated; dependency "moment-timezone" to 0.3.0
 * updated; dependency "request" to 2.53.0
 * updated; dependency "underscore" to 1.8.2
