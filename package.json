@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://JohnnyEstilles@github.com/JohnnyEstilles/semaphorejs.git"
+    "url": "https://JohnnyEstilles@github.com/AgentiaSystems/agentia-semaphore.git"
   },
   "keywords": [
     "semaphore",
@@ -22,9 +22,9 @@
   "author": "Johnny Estilles <johnny.estilles@agentia.asia>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JohnnyEstilles/semaphorejs/issues"
+    "url": "https://github.com/AgentiaSystems/agentia-semaphore/issues"
   },
-  "homepage": "https://github.com/JohnnyEstilles/semaphorejs",
+  "homepage": "https://github.com/AgentiaSystems/agentia-semaphore",
   "devDependencies": {
     "chai": "^2.1.0",
     "coveralls": "^2.11.2",
