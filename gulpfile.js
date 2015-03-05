@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+	jscs = require('gulp-jscs'),
 	jshint = require('gulp-jshint'),
 	mocha = require('gulp-mocha'),
 	coverage = require('gulp-coverage');
@@ -7,6 +8,13 @@ var paths = {
 	'src':['./index.js', './lib/**/*.js'],
 	'tests':['./test/**/*.js']
 };
+
+// lint task
+gulp.task('jscs', function(){
+	gulp
+		.src(paths.src)
+		.pipe(jscs());
+});
 
 // lint task
 gulp.task('lint', function(){
@@ -33,4 +41,4 @@ gulp.task('spec', function(){
 		.pipe(coverage.report({outFile: 'coverage.html'}));
 });
 
-gulp.task('default', ['lint', 'spec']);
+gulp.task('default', ['lint', 'jscs', 'spec']);
