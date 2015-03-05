@@ -5,9 +5,10 @@ Agentia-Semaphore is a Node.js module, which provides an object oriented wrapper
 
 ### Installation
 
-![NPM version](https://badge.fury.io/js/agentia-semaphore.png)  [![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
-
+[![NPM version](https://badge.fury.io/js/agentia-semaphore.png)](https://www.npmjs.com/package/agentia-semaphore)
+[![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
 [![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
+[![Code Climate](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg)](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore)
 
 Install with the Node.js package manager [npm](http://npmjs.org/):
 
@@ -245,7 +246,7 @@ Special thanks to Christian Besler of [Kickstart Ventures](http://www.kickstart.
 
 (The MIT License)
 
-Copyright (c) 2014 Johnny Estilles
+Copyright (c) 2014-2015 Johnny Estilles
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
