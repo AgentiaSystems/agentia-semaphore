@@ -8,7 +8,7 @@ Agentia-Semaphore is a Node.js module, which provides an object oriented wrapper
 [![NPM version](https://badge.fury.io/js/agentia-semaphore.png)](https://www.npmjs.com/package/agentia-semaphore)
 [![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
 [![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
-[![Code Climate](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg)](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore)
+<a href="https://codeclimate.com/github/AgentiaSystems/agentia-semaphore"><img src="https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg" /></a>
 
 Install with the Node.js package manager [npm](http://npmjs.org/):
 
