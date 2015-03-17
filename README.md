@@ -1,24 +1,27 @@
-# Agentia-Semaphore
-Agentia-Semaphore is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co](http://www.semaphore.co/) SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the 
+
+![agentia-semaphore logo](media/logo.png)
+---
+[![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
+[![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
+[![Code Climate](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg)](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore)
+
+**agentia-semaphore** is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co](http://www.semaphore.co/) SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the 
 
 ## Usage
 
 ### Installation
 
 [![NPM version](https://badge.fury.io/js/agentia-semaphore.png)](https://www.npmjs.com/package/agentia-semaphore)
-[![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
-[![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
-[![Code Climate](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg)](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore)
 
 Install with the Node.js package manager [npm](http://npmjs.org/):
 
     $ npm install --save agentia-semaphore
 
 ### Configuration Options
+**agentia-semaphore**
+The **agentia-semaphore** API provides the following configuration options.
 
-The Agentia-Semaphore API provides the following configuration options.
-
-`api key` (*Required*) - Configures your Semaphore API Key. Use of Agentia-Semaphore requires a [Semaphore](http://www.semaphore.co/) API key. Using the Agentia-Semaphore without setting `api key` will result in an exception.
+`api key` (*Required*) - Configures your Semaphore API Key. Use of **agentia-semaphore** requires a [Semaphore](http://www.semaphore.co/) API key. Using the **agentia-semaphore** without setting `api key` will result in an exception.
 
 `from` (*Optional*, *Default*: 'SEMAPHORE') - Sets the default name/number the message should originate from. You can also set the `from` option for each individual message. 
 
@@ -45,7 +48,7 @@ You can also configure your Semaphore API using the `SEMAPHORE_API_KEY` environm
 >
 > OpenShift: [How Create and Use Environment Variables](https://www.openshift.com/kb/kb-e1072-how-to-create-and-use-environment-variables-on-the-server)
 
-### The Agentia-Semaphore API
+### The agentia-semaphore API
 Our API mirrors all the functions available in the [Semaphore.co](http://www.semaphore.co/documentation) API.
 
 #### Sending Messages
