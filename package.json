@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/AgentiaSystems/agentia-semaphore",
   "devDependencies": {
-    "chai": "^2.1.0",
+    "chai": "^2.3.0",
     "coveralls": "^2.11.2",
     "gulp": "^3.8.11",
     "gulp-coverage": "^0.3.34",
