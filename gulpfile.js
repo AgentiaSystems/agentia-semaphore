@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-	jshint = require('gulp-jshint'),
 	mocha = require('gulp-mocha'),
 	coverage = require('gulp-coverage');
 
@@ -7,14 +6,6 @@ var paths = {
 	'src':['./index.js', './lib/**/*.js'],
 	'tests':['./test/**/*.js']
 };
-
-// lint task
-gulp.task('lint', function(){
-	gulp.src(paths.src)
-		.pipe(jshint())
-		.pipe(jshint.reporter('default'));
-
-});
 
 // gulp for running the mocha tests with default dot reporter
 gulp.task('test', function(){
@@ -33,4 +24,4 @@ gulp.task('spec', function(){
 		.pipe(coverage.report({outFile: 'coverage.html'}));
 });
 
-gulp.task('default', ['lint', 'jscs', 'spec']);
+gulp.task('default', ['spec']);
