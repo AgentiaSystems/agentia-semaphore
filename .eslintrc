@@ -62,6 +62,9 @@ rules:
     - 2
     - 80
     - 2
+  ## allow underscoe dangle because we use `lodash`
+  ## https://github.com/eslint/eslint/blob/master/docs/rules/no-underscore-dangle.md
+  no-underscore-dangle: 0
 
   # Strict Mode
   # list: https://github.com/eslint/eslint/tree/master/docs/rules#strict-mode
