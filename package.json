@@ -42,9 +42,9 @@
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
+    "lodash": "^3.9.3",
     "moment-timezone": "^0.3.1",
     "querystring": "^0.2.0",
-    "request": "^2.53.0",
-    "underscore": "^1.8.2"
+    "request": "^2.53.0"
   }
 }
