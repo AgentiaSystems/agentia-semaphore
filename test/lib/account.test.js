@@ -1,4 +1,4 @@
-var _ = require('underscore'),
+var _ = require('lodash'),
 	chai = require('chai'),
 	expect = chai.expect,
 	sinon = require('sinon'),

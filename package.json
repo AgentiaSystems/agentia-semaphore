@@ -27,24 +27,24 @@
   },
   "homepage": "https://github.com/AgentiaSystems/agentia-semaphore",
   "devDependencies": {
-    "chai": "^2.1.0",
-    "coveralls": "^2.11.2",
+    "chai": "^2.3.0",
     "gulp": "^3.8.11",
     "gulp-coverage": "^0.3.34",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.2",
     "gulp-mocha": "^2.0.0",
-    "istanbul": "^0.3.7",
+    "istanbul": "^0.3.14",
     "jscs": "^1.11.3",
     "jshint": "^2.6.3",
-    "mocha": "^2.1.0",
-    "sinon": "^1.12.2",
+    "mocha": "^2.2.5",
+    "request": "^2.55.0",
+    "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
-    "moment-timezone": "^0.3.0",
+    "lodash": "^3.9.3",
+    "moment-timezone": "^0.3.1",
     "querystring": "^0.2.0",
-    "request": "^2.53.0",
-    "underscore": "^1.8.2"
+    "request": "^2.53.0"
   }
 }
