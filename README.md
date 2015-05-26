@@ -236,10 +236,10 @@ You can run our unit tests by cloning our repositository, install the module dep
     npm install
     npm test
 
-You can also use our `gulp` tasks: `test` and `spec`.
+You can perform a lint check and generate a coverage report using the following:
 
-    gulp test
-    gulp spec (which generates a coverage report)
+    npm run lint
+    npm run cover (coverate report will be stored in the `./coverage` folder)
 
 ## Thanks
 
