@@ -2,8 +2,9 @@
 ![agentia-semaphore][logo-url]
 ---
 [![Build Status][travis-badge]][travis-url]
-[![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
-[![Code Climate](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg)](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore)
+[![Test Coverage][codeclimate-coverage]][codeclimate-url]
+[![Code Climate][codeclimate-gpa]][codeclimate-url]
+
 
 **agentia-semaphore** is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co][semaphore] SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the
 
@@ -258,8 +259,13 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [logo-url]: media/logo.png
+
 [travis-badge]: https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master
 [travis-url]: https://travis-ci.org/AgentiaSystems/agentia-semaphore
+
+[codeclimate-url]: https://codeclimate.com/github/AgentiaSystems/agentia-semaphore
+[codeclimate-gpa]: https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg
+[codeclimate-coverage]: https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/coverage.svg
 
 [npm-badge]: https://badge.fury.io/js/agentia-semaphore.png
 [npm-url]: https://www.npmjs.com/package/agentia-semaphore
