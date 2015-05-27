@@ -1,19 +1,20 @@
 
-![agentia-semaphore logo](media/logo.png)
+![agentia-semaphore][logo-url]
 ---
-[![Build Status](https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master)](https://travis-ci.org/AgentiaSystems/agentia-semaphore)
-[![Coverage Status](https://coveralls.io/repos/AgentiaSystems/agentia-semaphore/badge.svg?branch=master)](https://coveralls.io/r/AgentiaSystems/agentia-semaphore)
-[![Code Climate](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg)](https://codeclimate.com/github/AgentiaSystems/agentia-semaphore)
+[![Build Status][travis-badge]][travis-url]
+[![Test Coverage][codeclimate-coverage]][codeclimate-url]
+[![Code Climate][codeclimate-gpa]][codeclimate-url]
 
-**agentia-semaphore** is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co](http://www.semaphore.co/) SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the
+
+**agentia-semaphore** is a Node.js module, which provides an object oriented wrapper for the [Semaphore.co][semaphore] SMS gateway API. With Semaphore you can send SMS messages to all major mobile networks in the Philippines, including Smart, Globe, and Sun, using the
 
 ## Usage
 
 ### Installation
 
-[![NPM version](https://badge.fury.io/js/agentia-semaphore.png)](https://www.npmjs.com/package/agentia-semaphore)
+[![NPM version][npm-badge]][npm-url]
 
-Install with the Node.js package manager [npm](http://npmjs.org/):
+Install with the Node.js package manager [npm][npm-url]:
 
     $ npm install --save agentia-semaphore
 
@@ -21,11 +22,11 @@ Install with the Node.js package manager [npm](http://npmjs.org/):
 **agentia-semaphore**
 The **agentia-semaphore** API provides the following configuration options.
 
-`api key` (*Required*) - Configures your Semaphore API Key. Use of **agentia-semaphore** requires a [Semaphore](http://www.semaphore.co/) API key. Using the **agentia-semaphore** without setting `api key` will result in an exception.
+`api key` (*Required*) - Configures your Semaphore API Key. Use of **agentia-semaphore** requires a [Semaphore][semaphore] API key. Using the **agentia-semaphore** without setting `api key` will result in an exception.
 
 `from` (*Optional*, *Default*: 'SEMAPHORE') - Sets the default name/number the message should originate from. You can also set the `from` option for each individual message.
 
-> *NOTE: According to the [Semaphore.co](http://www.semaphore.co/documentation#sending) documentation, "This feature is not available to everyone." Please consult with [Semaphore](http://www.semaphore.co/) to enable this feature.*
+> *NOTE: According to the [Semaphore.co][semaphore-docs-sending] documentation, "This feature is not available to everyone." Please consult with [Semaphore][semaphore] to enable this feature.*
 
 
 ##### Setting the configuration options
@@ -49,7 +50,7 @@ You can also configure your Semaphore API using the `SEMAPHORE_API_KEY` environm
 > OpenShift: [How Create and Use Environment Variables](https://www.openshift.com/kb/kb-e1072-how-to-create-and-use-environment-variables-on-the-server)
 
 ### The agentia-semaphore API
-Our API mirrors all the functions available in the [Semaphore.co](http://www.semaphore.co/documentation) API.
+Our API mirrors all the functions available in the [Semaphore.co][semaphore-docs] API.
 
 #### Sending Messages
 
@@ -68,9 +69,9 @@ The function accepts four parameters:
 
 Dashes, spaces and dots are automatically stripped from the number, you can also use something like 0999-555-1212.
 
-`message` *(required)*  - a string with the text message you wish to send. Because of the 160 character SMS limitation, messages longer than 160 charactes will deduct more than 1 credit from your [Semaphore](http://www.semaphore.co/) account.
+`message` *(required)*  - a string with the text message you wish to send. Because of the 160 character SMS limitation, messages longer than 160 charactes will deduct more than 1 credit from your [Semaphore][semaphore] account.
 
-`from` *(optional)* - the from name/number that will appear on the message. As I explained above, this feature is not available to all users. Please consult with [Semaphore](http://www.semaphore.co/) for more information.
+`from` *(optional)* - the from name/number that will appear on the message. As I explained above, this feature is not available to all users. Please consult with [Semaphore][semaphore] for more information.
 
 `callback` *(optional)* - a function that will be called after attempting to send the message. This callback will receive two parameters: `error` and `results`. If an error occured while attempting to make the API call, the `error` parameter will contain an `Error` object describing the error. If the API call was successfull, the `results` parameter will contain an object with the status of the API call. Check out the example below.
 
@@ -112,7 +113,7 @@ Other possible status messages in the results objected include the following:
     104     Gateway Down
 
 #### Retrieving list of sent messages
-To retrieve a list of the messages you've sent using your [Semaphore](http://www.semaphore.co/) account you use the `semaphore.messages()` api function. This api call returns a maximum of 100 messages at a time. To retrieve additional message you must use the `page` parameter.
+To retrieve a list of the messages you've sent using your [Semaphore][semaphore] account you use the `semaphore.messages()` api function. This api call returns a maximum of 100 messages at a time. To retrieve additional message you must use the `page` parameter.
 
 	semaphore.messages([<page>], <callback>);
 
@@ -157,7 +158,7 @@ To retrieve a list of the messages you've sent using your [Semaphore](http://www
     }
 
 #### Retrieving list of sent messages by network/telco provider
-To retrieve a list of the messages you've sent using your [Semaphore](http://www.semaphore.co/) account to a specific network provider you can use the `semaphore.network()` api function. This call takes two paramters: `telco` and `callback`.
+To retrieve a list of the messages you've sent using your [Semaphore][semaphore] account to a specific network provider you can use the `semaphore.network()` api function. This call takes two paramters: `telco` and `callback`.
 
 	semaphore.network(<telco>, <callback>);
 
@@ -201,7 +202,7 @@ To retrieve a list of the messages for a specific time period you can use the `s
 	});
 
 #### Retrieving your account status
-To obtain your [Semaphore](http://www.semaphore.co/) account status you can use the `semaphore.account()` api function.
+To obtain your [Semaphore][semaphore] account status you can use the `semaphore.account()` api function.
 
 	semaphore.account(<callback>);
 
@@ -243,7 +244,7 @@ You can perform a lint check and generate a coverage report using the following:
 
 ## Thanks
 
-Special thanks to Christian Besler of [Kickstart Ventures](http://www.kickstart.ph/) for his support during the development of this module.
+Special thanks to Christian Besler of [Kickstart Ventures][kickstart] for his support during the development of this module.
 
 ## License
 
@@ -256,3 +257,21 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[logo-url]: media/logo.png
+
+[travis-badge]: https://travis-ci.org/AgentiaSystems/agentia-semaphore.svg?branch=master
+[travis-url]: https://travis-ci.org/AgentiaSystems/agentia-semaphore
+
+[codeclimate-url]: https://codeclimate.com/github/AgentiaSystems/agentia-semaphore
+[codeclimate-gpa]: https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/gpa.svg
+[codeclimate-coverage]: https://codeclimate.com/github/AgentiaSystems/agentia-semaphore/badges/coverage.svg
+
+[npm-badge]: https://badge.fury.io/js/agentia-semaphore.png
+[npm-url]: https://www.npmjs.com/package/agentia-semaphore
+
+[semaphore]: http://www.semaphore.co/
+[semaphore-docs]: http://www.semaphore.co/documentation
+[semaphore-docs-sending]: http://www.semaphore.co/documentation#sending
+
+[kickstart]: http://www.kickstart.ph/
