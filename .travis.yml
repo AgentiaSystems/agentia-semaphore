@@ -1,14 +1,26 @@
 language: node_js
 node_js:
-  - "0.12"
   - "0.10"
+  - "0.12"
 
 notifications:
-  email: 
-    - "johnny.estilles@agentia.asia"
+  email:
+    - johnny.estilles@agentia.asia
 
-after_script: 
-  - "NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+addons:
+ code_climate:
+   repo_token: 636ae2cc82f862714a33f273378aa1699e355c78ee10353e288efc2c59386d60
+
+before_install:
+  - npm install -g eslint
+  - npm install -g codeclimate-test-reporter
+
+before_script:
+  - npm run lint
+
+after_script:
+  - npm run cover
+  - codeclimate < ./coverage/lcov.info
 
 branches:
   only:
