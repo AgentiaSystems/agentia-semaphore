@@ -38,6 +38,6 @@
   "dependencies": {
     "lodash": "^3.9.3",
     "moment-timezone": "^0.3.1",
-    "request": "^2.53.0"
+    "request": "^2.56.0"
   }
 }
