@@ -32,14 +32,12 @@
     "eslint": "^0.21.2",
     "istanbul": "^0.3.14",
     "mocha": "^2.2.5",
-    "request": "^2.55.0",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
     "lodash": "^3.9.3",
     "moment-timezone": "^0.3.1",
-    "querystring": "^0.2.0",
-    "request": "^2.53.0"
+    "request": "^2.56.0"
   }
 }
