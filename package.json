@@ -11,6 +11,10 @@
     "cover": "istanbul cover node_modules/.bin/_mocha -- --reporter dot",
     "lint": "eslint index.js lib test"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://JohnnyEstilles@github.com/AgentiaSystems/agentia-semaphore.git"
