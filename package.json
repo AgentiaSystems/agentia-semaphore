@@ -7,10 +7,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha",
+    "test": "node_modules/mocha/bin/mocha --reporter dot",
+    "spec": "node_modules/mocha/bin/mocha --reporter spec",
     "cover": "istanbul cover node_modules/.bin/_mocha -- --reporter dot",
     "lint": "eslint index.js lib test"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://JohnnyEstilles@github.com/AgentiaSystems/agentia-semaphore.git"
@@ -32,6 +37,7 @@
     "eslint": "^0.21.2",
     "istanbul": "^0.3.14",
     "mocha": "^2.2.5",
+    "pre-commit": "^1.0.10",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
   },
