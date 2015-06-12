@@ -38,6 +38,7 @@
     "istanbul": "^0.3.14",
     "mocha": "^2.2.5",
     "pre-commit": "^1.0.10",
+    "request": "^2.57.0",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
   },
